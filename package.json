@@ -5,11 +5,15 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@atlaskit/css-reset": "^3.0.3",
+    "@atlaskit/tree": "^4.1.8",
     "@material-ui/core": "3.3.2",
     "@material-ui/icons": "3.0.1",
     "react": "16.7.0-alpha.0 - next",
+    "react-beautiful-dnd": "^10.0.2",
     "react-dom": "16.7.0-alpha.0 - next",
-    "react-scripts": "2.0.3"
+    "react-scripts": "2.0.3",
+    "styled-components": "^4.1.1"
   },
   "devDependencies": {},
   "scripts": {

@@ -35,7 +35,7 @@ export const Column = ({column, tasks, index}) => {
                 <Title
                     {...provided.dragHandleProps}
                 >{column.title}</Title>
-                <Droppable droppableId={column.id} isDropDisabled={column.id === 'column-1'} type={'task'}>
+                <Droppable droppableId={column.id} type={'task'}>
                     {(provided, snapshot) => (
                         <TaskList
                             ref={provided.innerRef}

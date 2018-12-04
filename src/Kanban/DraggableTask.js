@@ -3,13 +3,7 @@ import {Draggable} from 'react-beautiful-dnd'
 import {Task} from './Task'
 import styled from 'styled-components'
 
-const Container = styled.div`
-`
-const Clone = styled(Container)`
-+ div {
-    display: none!important
-}
-`
+const Container = styled.div``
 
 export const DraggableTask = ({task, index}) => <Draggable
     type={'task'}
@@ -18,7 +12,6 @@ export const DraggableTask = ({task, index}) => <Draggable
     isDragDisabled={false}
 >
     {(provided, snapShot) => (
-        <>
         <Container
             ref={provided.innerRef}
             isDragging={snapShot.isDragging}
@@ -29,9 +22,5 @@ export const DraggableTask = ({task, index}) => <Draggable
             content={task.content}
         />
         </Container>
-            {snapShot.isDragging && <Clone><Task
-                content={task.content}
-            /></Clone>}
-        </>
     )}
 </Draggable>
